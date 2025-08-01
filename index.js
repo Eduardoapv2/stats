@@ -3,7 +3,8 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  // TODO 
+  return numbers.length;
 }
 
 /**
@@ -12,6 +13,7 @@ function getLength(numbers) {
  */
 function getSum(numbers) {
   // TODO
+  return numbers.reduce((acc, num) => acc + num, 0);
 }
 
 /**
@@ -20,6 +22,7 @@ function getSum(numbers) {
  */
 function getMean(numbers) {
   // TODO
+  return getSum(numbers) / getLength(numbers);
 }
 
 /**
@@ -28,6 +31,7 @@ function getMean(numbers) {
  */
 function getMin(numbers) {
   // TODO
+  return Math.min(...numbers);
 }
 
 /**
@@ -36,6 +40,7 @@ function getMin(numbers) {
  */
 function getMax(numbers) {
   // TODO
+  return Math.max(...numbers);
 }
 
 /**
@@ -44,6 +49,7 @@ function getMax(numbers) {
  */
 function getRange(numbers) {
   // TODO
+  return getMax(numbers) - getMin(numbers);
 }
 
 /**
@@ -52,6 +58,7 @@ function getRange(numbers) {
  */
 function getEvens(numbers) {
   // TODO
+  return numbers.filter(n => n % 2 === 0);
 }
 
 /**
@@ -60,6 +67,7 @@ function getEvens(numbers) {
  */
 function getOdds(numbers) {
   // TODO
+  return numbers.filter(n => n % 2 !== 0);
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
